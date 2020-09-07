@@ -16,10 +16,6 @@ export class Parent3Component implements OnInit {
   ngOnInit(): void {
   }
 
-  // newMessage(text){
-  //   this.data.updateData(text);
-  // }
-
   newMessage(){
     this.data.updateData('hello');
   }

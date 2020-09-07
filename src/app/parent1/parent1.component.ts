@@ -8,13 +8,11 @@ import { DatasourceService } from '../datasource.service';
 })
 export class Parent1Component implements OnInit {
 
-  // text = '';
   text: string;
 
   constructor(private data: DatasourceService) { }
 
   ngOnInit(): void {
-    // this.data.share.subscribe(x => this.text = x);
     this.data.share.subscribe(text => this.text = text);
   }
 
